@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <link rel="canonical" href="https://vishwasracharya/email-permutator" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#fff" />
+
+  <meta property="og:image" content="images/og.png" />
+  <meta property="og:locale" content="en_us" />
+  <meta property="og:site_name" content="Email Permutator" />
+  <meta property="og:title" content="Email Permutator" />
+  <meta property="og:type" content="WebApplication" />
+  <meta property="og:url" content="https://vishwasracharya/email-permutator" />
+  <meta property="og:description" content="Generate free emails on one click." />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@vishwasracharya" />
+  <meta name="twitter:creator" content="@vishwasracharya" />
+  <meta name="twitter:title" content="Email Permutator | Vishwas Acharya" />
+  <meta name="twitter:description" content="Generate free emails on one click." />
+  <meta name="twitter:image" content="images/og.png" />
+
+  <meta name="title" content="Email Permutator | Vishwas Acharya" />
+  <meta name="description" content="Generate free emails on one click." />
+
+  <meta name="email" content="vishwasracharya@gmail.com" />
+  <title>Email Permutator | Vishwas Acharya</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+  <img loading="eager" class="theme-mode-image" id="theme-toggel-btn" style="cursor: pointer;" width="30" height="30" src="images/light-mode.png" alt="Theme Toggle Image" title="Theme Toggle Image">
+  <section class="my-5 py-4 z-index-9">
+    <div class="container mb-5">
+      <div class="row">
+        <div class="col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
+          <div class="border-0 shadow rounded-20 p-5 bg-white">
+            <div class="row gx-4">
+              <div class="col-md-6">
+                <div>
+                  <label class="mb-1" for="form_name">First Name *</label>
+                  <div class="mb-4">
+                    <input id="form_name" type="text" name="name" class="form-control rounded-10" placeholder="Thomas" value="Thomas" required />
+                  </div>
+                </div>
+                <div class="addOn d-none">
+                  <label class="mb-1">Middle Name</label>
+                  <div class="mb-4">
+                    <input id="form_middlename" type="text" name="nickname" class="form-control rounded-10" placeholder="Larry" value="" />
+                  </div>
+                </div>
+                <div>
+                  <label class="mb-1" for="form_lastname">Last Name *</label>
+                  <div class="mb-4">
+                    <input id="form_lastname" type="text" name="surname" class="form-control rounded-10" placeholder="Shelby" value="Shelby" required />
+                  </div>
+                </div>
+                <div class="addOn d-none">
+                  <label class="mb-1">Nick Name</label>
+                  <div class="mb-4">
+                    <input id="form_nickname" type="text" name="nickname" class="form-control rounded-10" placeholder="TS" value="" />
+                  </div>
+                </div>
+                <div>
+                  <label class="mb-1" for="form_domain">Domain *</label>
+                  <div class="mb-4">
+                    <input id="form_domain" type="text" name="domain" class="form-control rounded-10" placeholder="gmail.com" value="gmail.com" required />
+                  </div>
+                </div>
+                <div class="mb-4 addOn d-none">
+                  <input id="form_domain_2" type="text" name="domain" class="form-control rounded-10" placeholder="hotmail.com" value="" />
+                </div>
+                <div class="mb-4 addOn d-none">
+                  <input id="form_domain_3" type="text" name="domain" class="form-control rounded-10" placeholder="outlook.com" value="" />
+                </div>
+                <div class="col-12 text-start mb-3">
+                  <button class="btn btn-dark bg-gradient btn-sm border-0 rounded shadow-sm lh-1" id="addOnBtn">
+                    Show AddOns
+                  </button>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="mb-3">
+                  <div>
+                    <textarea name="output" id="output" class="form-control overflow-auto rounded-15" style="height: 260px" readonly></textarea>
+                  </div>
+                  <div class="d-flex align-items-center justify-content-start flex-wrap mt-2 mx-1">
+                    <p class="my-auto text-muted" style="font-size: small">
+                      <span id="noOfEmailsGenerated">30</span> emails
+                      generated<span class="text-muted mx-1">&#8226;</span>
+                    </p>
+                    <a class="my-auto text-muted text-decoration-none" style="font-size: small" href="#" target="_blank" id="sendViaGmail">Send via Gmail</a>
+                    <span class="text-muted mx-1">&#8226;</span>
+                    <a class="my-auto text-muted text-decoration-none" style="font-size: small" href="#" target="_blank" id="copyToClipboard">Copy To Clipboard</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 text-center">
+                <button class="btn btn-purple bg-gradient shadow border-0 rounded-10" id="generateEmails">
+                  Generate Email Address
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row my-3">
+        <div class="d-flex align-items-center justify-content-center">
+          <p class="my-2 text-muted" style="font-size: small">
+            <a class="my-2 text-muted text-decoration-none" style="font-size: small" href="https://vishwasracharya.herokuapp.com" target="_blank">Vishwas Acharya</a>
+            <span class="text-muted mx-1">&#8226;</span>
+            <a class="my-2 text-muted text-decoration-none" style="font-size: small" href="https://www.buymeacoffee.com/vishwasacharya" target="_blank">Buy me a coffee</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="p.js"></script>
+</body>
+
+</html>
