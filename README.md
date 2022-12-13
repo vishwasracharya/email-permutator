@@ -1,5 +1,5 @@
 # Email Permutator
-A Tool to generate emails based on various inputs.
+A Tool to generate emails, based on various inputs.
 
 ![visitor badge](https://visitor-badge.glitch.me/badge?page_id=vishwasrachary.visitor-badge)
 <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/vishwasracharya/email-permutator?color=red">
